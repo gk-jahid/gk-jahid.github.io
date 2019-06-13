@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="eng">
     <head>
         <meta charset="utf-8">
@@ -51,6 +51,9 @@
 					<i class="fas fa-arrow-circle-down"></i>
 				</div>
 			</section>
+			
+			<!-- Carousel 1 Section -->
+			
 			<section id = "" class = "">
 				<div id = "details-slide" class = "carousel-wrapper container">
 					<!-- Carousel Item -->
@@ -87,6 +90,8 @@
 					
 				</div>
 			</section>
+			
+			<!-- Portfolio Section -->
 			
 			<section id = "portfolio" class = "">
 				<div id = "section-wrapper" class = "container">
@@ -127,6 +132,9 @@
 				
 				</div>
 			</section>
+			
+			<!-- Skills Section -->
+			
 			<section id = "skills" class = "">
 				<div id = "details-slide" class = "container">
 				<i class="fas fa-camera"></i>
@@ -146,6 +154,9 @@
 					</div>
 				</div>
 			</section>
+			
+			<!-- Work Experience Section -->
+			
 			<section id = "work-experience" class = "">
 				<div id = "we-container" class = "container">
 				<i class="fas fa-camera"></i>
@@ -169,6 +180,7 @@
 					</div>
 				</div>
 			</section>
+			
 			<!-- Carousel Feedback Section / Aphorism about Web Developement -->
 			<section id = "carousel-comment" class = "">
 				<div id = "carousel-container" class = "container">
@@ -176,61 +188,118 @@
 					
 				</div>
 			</section>
+			
 			<!-- Contact Section -->
 			
 			<section id = "contact" class = "">
 				<div id = "contact-container" class = "container">
 					<h1 id = "contact-title" class = "title">Contact</h1>
-					<form id = "contact-form" action = "client_mail.php" > 
-						<div class = "input-container">
-							<div id = "input-field"><i class="far fa-user"></i><input type = "text" ></div>
-							<div id = "input-field"><i class="far fa-envelope"></i><input type = "email" ></div>
-						</div>
-						<div class = "input-container">
-							<select>
-								<option>Budget</option>
-								<option>250$</option>
-								<option>500$</option>
-								<option>1000$</option>
-							</select>
-						</div>
-						<div class = "input-container">
-							<select>
-								<option>Timeline</option>
-								<option>3 days</option>
-								<option>5 days</option>
-								<option>1 week</option>
-							</select>
-						</div>
-						<div id = "proposal-summary"> 
-							<text-area> 
-							
-							</text-area>
-						</div>
-						<button type = "submit" name = "submit" >Send</button>
-					</form>
-					<div id = "contact-location">
-						<h5>LOCATION</h5>
+					<div id = "contact-left">
+						<form id = "contact-form" action = "client_mail.php" > 
+							<div id = "input-field" class = "input-container">
+								<div class = "input-field"><i class="far fa-user"></i><input id = "name" type = "text" ></div>
+								<div class = "input-field "><i class="far fa-envelope"></i><input id = "email" type = "email" ></div>
+							</div>
+							<div class = "input-container">
+								<select class = "input">
+									<option>Budget</option>
+									<option>250$</option>
+									<option>500$</option>
+									<option>1000$</option>
+								</select>
+							</div>
+							<div class = "input-container">
+								<select class = "input">
+									<option>Timeline</option>
+									<option>3 days</option>
+									<option>5 days</option>
+									<option>1 week</option>
+								</select>
+							</div>
+							<div id = "proposal-summary" class = "input-container"> 
+								<textarea class = "input" placeholder = "Write Something..."> 
+								
+								</textarea>
+							</div>
+							<div> 
+								<button class = "btn-submit" type = "submit" name = "submit" >Send</button>
+							</div>
+						</form>
 					</div>
-					<div id = "contact-social">
-						<h5>I AM SOCIAL</h5>
-						<ul >
-							<li><a href = "#" target = "_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-							<li><a href = "#" target = "_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-							<li><a href = "#" target = "_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-							<li><a href = "#" target = "_blank"><i class="fab fa-codepen"></i> Codepen</a></li>
-							<li><a href = "#" target = "_blank"><i class="fab fa-github"></i> Github</a></li>
-						</ul>
+					<div id = "contact-right"> 
+						<div id = "contact-location">
+							<h5>LOCATION</h5>
+							<p>
+								H#45, Parise Road,<br>
+								Mirpur 11, Pllabi, <br>
+								Dhaka 1216
+							</p>
+						</div>
+						<div id = "contact-social">
+							<h5>I AM SOCIAL</h5>
+							<ul >
+								<li><a href = "#" target = "_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+								<li><a href = "#" target = "_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+								<li><a href = "#" target = "_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+								<li><a href = "#" target = "_blank"><i class="fab fa-codepen"></i> Codepen</a></li>
+								<li><a href = "#" target = "_blank"><i class="fab fa-github"></i> Github</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section id = "" class = "">
-				<div id = "details-slide" class = "container"></div>
+			
+			<!-- Google Map Location in Iframe -->
+			
+			<section id = "map" class = "">
+				<div id = "map-container" class = "">
+					<iframe id = "map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.137365712364!2d90.37003473105138!3d23.813713889027383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12bb237aab1%3A0x4e61dd4c227837b9!2sParise+Rd%2C+Dhaka+1216!5e0!3m2!1sen!2sbd!4v1560352043974!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</section>
 			
 		</main>
-		<footer id = "footer"> 
 		
+		<!-- Footer Section -->
+		
+		<footer id = "footer"> 
+			<div id = "footer-container" class = "container">
+				<div id = "footer-container-inner" > 
+					<div id = "ftr-col-1" class = "ftr-col">
+						<header class = "ftr-col-title" >MENU</header>
+						<ul id = "ftr-menu-list"> 
+							<li><a class = "ftr-menu-link" href = "">HOME</a></li>
+							<li><a class = "ftr-menu-link" href = "">Portfolio</a></li>
+							<li><a class = "ftr-menu-link" href = "">BLOG</a></li>
+							<li><a class = "ftr-menu-link" href = "">RESUME</a></li>
+							<li><a class = "ftr-menu-link" href = "">CONTACT</a></li>
+						</ul>
+					</div>
+					<div id = "ftr-col-1" class = "ftr-col">
+						<header class = "ftr-col-title">CONTACT</header>
+						<a class = "ftr-menu-link" href = "#">Let 3d</a>
+					</div>
+					<div id = "ftr-col-1" class = "ftr-col">
+						<header class = "ftr-col-title">NEWSLETTER</header>
+					</div>
+					<div id = "ftr-col-1" class = "ftr-col">
+						<header class = "ftr-col-title">CONTACT US</header>
+						<a class = "ftr-menu-link" href = "#">
+							<span class="fa-stack">
+								  <i class="far fa-circle fa-stack-2x"></i>
+								  <i class="fas fa-twitter fa-stack-1x"></i>
+							</span>
+						</a>
+						<a class = "ftr-menu-link" href = "#">
+							<span class="fa-stack">
+								  <i class="far fa-circle fa-stack-2x"></i>
+								  <i class="fas fa-facebook-f fa-stack-1x"></i>
+							</span>
+						</a>
+					</div>
+				
+				</div>
+			
+			</div>
 		</footer>
 		
 		<!-- This is the ending of body -->

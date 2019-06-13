@@ -84,6 +84,95 @@ html {
 	padding-top:10px;
 }
 
+/* Contact Section */
+#contact-container{
+	
+}
+#contact-left{
+	width:66.66%;
+	
+}
+#contact-left form{
+	width:100%;
+}
+.input-container{
+	width:100%;
+	margin:2px 0px 2px 0px;
+}
+#contact-form{
+	display:flex;
+	flex-direction:column;
+	margin:5px 0px 5px 0px;
+}
+#input-field{
+	display:flex;
+	justify-content:space-between;
+}
+.input-field{
+	width:50%;
+}
+.float-right{
+	float:right;
+}
+#name{
+	width:90%;
+	border:none;
+}
+#email{
+	width:90%;
+	border:none;
+}
+.input{
+	width:100%;
+	border:1px solid;
+	border-color:rgb(0, 22, 22, 0.5);
+	border-radius:3px;
+}
+
+#contact-right{
+	width:32.33%;
+	margin-left:0;
+}
+
+/* Location on google Map */
+#map-container{
+	width:100%;
+	height:400px;
+}
+#map-frame{
+	width:100%;
+	height:100%;
+	opacity:0.5;
+}
+#map-frame:hover{
+	opacity:1;
+}
+
+/* Footer Section */
+#footer{
+	background-color:#363942;
+}
+#footer-container-inner{
+	display:flex;
+	padding-top:50px;
+}
+.ftr-col{
+	width:25%;
+	margin:5px;
+}
+.ftr-col-title{
+	color:#fff;
+	margin-bottom:25px;
+}
+#ftr-menu-list{
+	list-style:none;
+	margin-left:-40px;
+}
+.ftr-menu-link{
+	text-decoration:none;
+	color:#515560;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
