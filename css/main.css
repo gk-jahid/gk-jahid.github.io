@@ -86,10 +86,11 @@ html {
 
 /* Contact Section */
 #contact-container{
-	
+	display:flex;
+	justify-content:space-between;
 }
 #contact-left{
-	width:66.66%;
+	width:60%;
 	
 }
 #contact-left form{
@@ -97,11 +98,10 @@ html {
 }
 .input-container{
 	width:100%;
-	margin:2px 0px 2px 0px;
+	margin:5px 0px 2px 0px;
 }
 #contact-form{
-	display:flex;
-	flex-direction:column;
+	
 	margin:5px 0px 5px 0px;
 }
 #input-field{
@@ -109,29 +109,89 @@ html {
 	justify-content:space-between;
 }
 .input-field{
-	width:50%;
+	width:49%;
 }
-.float-right{
-	float:right;
+#proposal-summary textarea{
+	width:100%;
+	box-sizing: border-box;
 }
 #name{
 	width:90%;
-	border:none;
+	padding:10px;
+	border:2px solid red;
+	border-left:none;
+	border-radius:0px 3px 3px 0px;
 }
+.fa-user{
+	padding:10px;
+	border:2px solid red;
+	border-right:none;
+	border-radius:3px 0px 0px 3px;
+}
+#name-container{
+	display:flex;
+}
+#name-container:hover  >  .fa-user,
+ #name-container:hover  > #name{
+	border-color:green;
+	cursor:pointer;
+}
+input[type=text]:focus  ~ i, input[type=text]:focus{
+	border-color:#0080FF;
+	background-color:#ddd;
+	cursor:pointer;
+}
+#email-container{
+	display:flex;
+}
+
+
+#email-container:hover  >  .fa-envelope,
+ #email-container:hover  > #email{
+	border-color:green;
+	cursor:pointer;
+}
+input[type=email]:focus  ~ i, input[type=email]:focus{
+	border-color:#0080FF;
+	background-color:#ddd;
+	cursor:pointer;
+}
+
 #email{
 	width:90%;
-	border:none;
+	padding:10px;
+	border:2px solid red;
+	border-left:none;
+	border-radius:0px 3px 3px 0px;
+}
+.fa-envelope{
+	padding:10px;
+	border:2px solid red;
+	border-right:none;
+	border-radius:3px 0px 0px 3px;
 }
 .input{
 	width:100%;
+	padding:10px;
 	border:1px solid;
 	border-color:rgb(0, 22, 22, 0.5);
 	border-radius:3px;
 }
+/* Contact Right Section */
 
 #contact-right{
-	width:32.33%;
-	margin-left:0;
+	width:30%;
+}
+#contact-social ul{
+	list-style:none;
+}
+#contact-social a{
+	text-decoration:none;
+	margin-left:-40px;
+	color:#5EC2E6;
+	opacity:0.6;
+}#contact-social a:hover{
+	opacity:1;
 }
 
 /* Location on google Map */

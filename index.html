@@ -192,13 +192,14 @@
 			<!-- Contact Section -->
 			
 			<section id = "contact" class = "">
+				<h1 id = "contact-title" class = "title">Contact</h1>
 				<div id = "contact-container" class = "container">
-					<h1 id = "contact-title" class = "title">Contact</h1>
+					
 					<div id = "contact-left">
 						<form id = "contact-form" action = "client_mail.php" > 
 							<div id = "input-field" class = "input-container">
-								<div class = "input-field"><i class="far fa-user"></i><input id = "name" type = "text" ></div>
-								<div class = "input-field "><i class="far fa-envelope"></i><input id = "email" type = "email" ></div>
+								<div id = "name-container" class = "input-field"><i class="far fa-user"></i><input id = "name" type = "text" ></div>
+								<div id = "email-container" class = "input-field "><i class="far fa-envelope"></i><input id = "email" type = "email" ></div>
 							</div>
 							<div class = "input-container">
 								<select class = "input">
@@ -217,7 +218,7 @@
 								</select>
 							</div>
 							<div id = "proposal-summary" class = "input-container"> 
-								<textarea class = "input" placeholder = "Write Something..."> 
+								<textarea id = "text-area" placeholder = "Write Something..."> 
 								
 								</textarea>
 							</div>
