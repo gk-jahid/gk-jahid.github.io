@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color:#5EC2E6;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -55,7 +55,7 @@ html {
 }
 /* The First Carousel Part */
 	
-#first-carousel {box-sizing: border-box;}
+
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 .slide-img {
@@ -66,10 +66,12 @@ body {font-family: Verdana, sans-serif;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  width: 100%;
   z-index:-2;
   position: relative;
-  margin: auto;
+  margin:0 auto;
+  box-sizing:border-box;
+  overflow:hidden;
 }
 
 /* Caption text */
@@ -160,8 +162,52 @@ body {font-family: Verdana, sans-serif;}
 	font-size:100%;
 	padding-top:10px;
 }
+/* Skills Section */
 
+#progress-container{
+	display:flex;
+	justify-content:space-between;
+}
+.pg-circle{
+	min-width:100%/3;
+	
+}
+.pg-bar{
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	text-align:center;
+	background-color:#eee;
+	margin:50px 0px;
+	line-height:250px;
+}
+
+/* Work Experience Section */
+	
+#we-container{
+	display:flex;
+	justify-content:space-between;
+	}
+#we-left{
+	width:50%;
+}
+#we-right{
+	width:45%;
+	margin-left:30px;
+}
+#linkedin{
+	border:none;
+	border-radius:5px;
+	background-color:#5EC2E6;
+	color:#fff;
+	padding:10px;
+	font-weight:bold;
+	
+}
 /* Contact Section */
+#contact-title{
+	
+}
 #contact-container{
 	display:flex;
 	justify-content:space-between;
@@ -175,7 +221,7 @@ body {font-family: Verdana, sans-serif;}
 }
 .input-container{
 	width:100%;
-	margin:5px 0px 2px 0px;
+	margin:20px 0px 2px 0px;
 }
 #contact-form{
 	
@@ -185,23 +231,32 @@ body {font-family: Verdana, sans-serif;}
 	display:flex;
 	justify-content:space-between;
 }
-.input-field{
+.input-field {
 	width:49%;
 }
 #proposal-summary textarea{
 	width:100%;
 	box-sizing: border-box;
+	height:100px;
+	padding:10px;
+	border:2px solid;
+	border-color:rgb(94, 194, 230);
+	border-radius:3px;
+	color:#5EC2E6;
+	background-color:#eee;
+	
 }
 #name{
 	width:90%;
 	padding:10px;
-	border:2px solid red;
+	border:2px solid #5EC2E6;
 	border-left:none;
 	border-radius:0px 3px 3px 0px;
 }
 .fa-user{
 	padding:10px;
-	border:2px solid red;
+	color:#5EC2E6;
+	border:2px solid #5EC2E6;
 	border-right:none;
 	border-radius:3px 0px 0px 3px;
 }
@@ -210,7 +265,7 @@ body {font-family: Verdana, sans-serif;}
 }
 #name-container:hover  >  .fa-user,
  #name-container:hover  > #name{
-	border-color:green;
+	border-color:rgb(94, 194, 230, 0.5);
 	cursor:pointer;
 }
 input[type=text]:focus  ~ i, input[type=text]:focus{
@@ -225,39 +280,73 @@ input[type=text]:focus  ~ i, input[type=text]:focus{
 
 #email-container:hover  >  .fa-envelope,
  #email-container:hover  > #email{
-	border-color:green;
+	border-color:rgb(94, 194, 230, 0.5);
 	cursor:pointer;
 }
-input[type=email]:focus  ~ i, input[type=email]:focus{
+ input[type=email]:focus{
 	border-color:#0080FF;
 	background-color:#ddd;
 	cursor:pointer;
+}
+input[type=email]:focus ~ i{
+	background-color:#ddd;
 }
 
 #email{
 	width:90%;
 	padding:10px;
-	border:2px solid red;
+	border:2px solid #5EC2E6;
 	border-left:none;
 	border-radius:0px 3px 3px 0px;
 }
 .fa-envelope{
 	padding:10px;
-	border:2px solid red;
+	color:#5EC2E6;
+	border:2px solid #5EC2E6;
 	border-right:none;
 	border-radius:3px 0px 0px 3px;
 }
 .input{
 	width:100%;
 	padding:10px;
-	border:1px solid;
-	border-color:rgb(0, 22, 22, 0.5);
+	border:2px solid;
+	border-color:rgb(94, 194, 230);
 	border-radius:3px;
+	color:#5EC2E6;
+	border-color:rgb(94, 194, 230);
 }
+.input:hover, #text-area:hover{
+	border-color:rgb(94, 194, 230, 0.5);
+}
+.odd{
+	background-color:#5EC2E6;
+	color:#fff;
+	
+}
+.even{
+	background-color:#fff;
+	color:#5EC2E6;
+	
+}
+.btn-submit{
+	width:100px;
+	background-color:#5EC2E6;
+	float:right;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	font-weight:700;
+	margin:20px 0px;
+	border-radius:5px;
+	border:none;
+}
+
 /* Contact Right Section */
 
 #contact-right{
 	width:30%;
+	margin-left:10px;
+	color:#5EC2E6;
 }
 #contact-social ul{
 	list-style:none;

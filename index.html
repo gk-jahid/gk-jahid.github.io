@@ -55,25 +55,25 @@
 			<!-- Carousel 1 Section -->
 			
 			<section id = "first-carousel" class = "">
-				<div id = "details-slide" class = "carousel-wrapper container">
+				<div id = "details-slide" class = "carousel-wrapper ">
 					<!-- Carousel Item -->
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
 						  <div class="numbertext">1 / 3</div>
-						  <img class = "slide-img" src="https://images.pexels.com/photos/2506230/pexels-photo-2506230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+						  <img class = "slide-img" src="img/slide1.jpg" style="width:100%">
 						  <div class="text">Caption Text</div>
 						</div>
 
 						<div class="mySlides fade">
 						  <div class="numbertext">2 / 3</div>
-						  <img class = "slide-img" src="https://images.pexels.com/photos/2443865/pexels-photo-2443865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+						  <img class = "slide-img" src="img/slide2.jpg" style="width:100%">
 						  <div class="text">Caption Two</div>
 						</div>
 
 						<div class="mySlides fade">
 						  <div class="numbertext">3 / 3</div>
-						  <img class = "slide-img" src="https://images.pexels.com/photos/2439122/pexels-photo-2439122.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+						  <img class = "slide-img" src="img/slide3.jpg" style="width:100%">
 						  <div class="text">Caption Three</div>
 						</div>
 
@@ -145,10 +145,19 @@
 					scrambled it to make a type specimen book.</p>
 					<div id = "progress-container"> 
 						<div id = "pg-1" class = "pg-circle">
+							<div class = "pg-bar"> 
+								90%
+							</div>
 						</div>
-						<div id = "pg-1" class = "pg-circle">
+						<div id = "pg-2" class = "pg-circle">
+							<div class = "pg-bar"> 
+								90%
+							</div>
 						</div>
-						<div id = "pg-1" class = "pg-circle">
+						<div id = "pg-3" class = "pg-circle">
+							<div class = "pg-bar"> 
+								90%
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,25 +166,31 @@
 			<!-- Work Experience Section -->
 			
 			<section id = "work-experience" class = "">
+				
+				<h1 id = "we-title" class = "title">Work Experience</h1>
+				
 				<div id = "we-container" class = "container">
-				<i class="fas fa-camera"></i>
+				
+					
 					<div id = "we-left" class = "we-div"> 
-						<h1 id = "we-title" class = "title">Work Experience</h1>
+						
 						<p id = "we-para" class = "para">It is a long established
 						fact that a reader will be distracted by the readable content 
 						of a page when looking at its layout. The point of using 
 						Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here, content here',</p>
 						
-						<a id ="linkedin" href = "https://www.linkedin.com/in/gkjahid/">
-						<button type = "link" name = "linkedin" >View On Linkedin</button>
+						<a  href = "https://www.linkedin.com/in/gkjahid/">
+						<button id ="linkedin" type = "link" name = "linkedin" >View On Linkedin</button>
 						</a>
 						
 					</div>
-					<div id = "timeline">
-					</div>
+					
 					<div id = "we-right" class = "we-div"> 
-						
+						<div class = "dialog-box"> Work on this company as freenlancer.</div>
+						<div class = "dialog-box"> Work on this company as freenlancer. </div>
+						<div class = "dialog-box"> Work on this company as freenlancer. </div>
+						<div class = "dialog-box"> Work on this company as freenlancer.</div>
 					</div>
 				</div>
 			</section>
@@ -183,7 +198,7 @@
 			<!-- Carousel Feedback Section / Aphorism about Web Developement -->
 			<section id = "carousel-comment" class = "">
 				<div id = "carousel-container" class = "container">
-					<i class="fas fa-camera"></i>
+					
 					
 				</div>
 			</section>
@@ -202,18 +217,18 @@
 							</div>
 							<div class = "input-container">
 								<select class = "input">
-									<option>Budget</option>
-									<option>250$</option>
-									<option>500$</option>
-									<option>1000$</option>
+									<option class = "odd">Budget</option>
+									<option class = "even">250$</option>
+									<option class = "odd">500$</option>
+									<option class = "even">1000$</option>
 								</select>
 							</div>
 							<div class = "input-container">
 								<select class = "input">
-									<option>Timeline</option>
-									<option>3 days</option>
-									<option>5 days</option>
-									<option>1 week</option>
+									<option class = "odd">Timeline</option>
+									<option class = "even">3 days</option>
+									<option class = "odd">5 days</option>
+									<option class = "even">1 week</option>
 								</select>
 							</div>
 							<div id = "proposal-summary" class = "input-container"> 
@@ -228,7 +243,7 @@
 					</div>
 					<div id = "contact-right"> 
 						<div id = "contact-location">
-							<h5>LOCATION</h5>
+							<h4>LOCATION</h4>
 							<p>
 								H#45, Parise Road,<br>
 								Mirpur 11, Pllabi, <br>
@@ -236,7 +251,7 @@
 							</p>
 						</div>
 						<div id = "contact-social">
-							<h5>I AM SOCIAL</h5>
+							<h4>I AM SOCIAL</h4>
 							<ul >
 								<li><a href = "#" target = "_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
 								<li><a href = "#" target = "_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
