@@ -35,13 +35,15 @@
 				<img id = "logo-img" class = "navbar-brand justify-content-start" src = "gkjahid.jpg" alter = "Logo" >
 				</div>
 				<nav id = "nav-bar" class = "navbar navbar-expand-sm bg-light justify-content-end"> 
-					<a id = "" href ="#" class = "nav-link">Home</a>
-					<a id = "" href ="#" class = "nav-link">Portfolio</a>
-					<a id = "" href ="#" class = "nav-link">Blog</a>
-					<a id = "" href ="#" class = "nav-link">Resume</a>
-					<a id = "" href ="#" class = "nav-link">Contact</a>
+					
+					<a id = "" href ="#home-section" class = "nav-link">Home</a>
+					<a id = "" href ="#portfolio" class = "nav-link">Portfolio</a>
+					<a id = "" href ="#skills" class = "nav-link">Blog</a>
+					<a id = "" href ="#work-experience" class = "nav-link">Resume</a>
+					<a id = "" href ="#contact" class = "nav-link">Contact</a>
 				</nav>
 			</section>
+				<span onclick = "topMenu()" id = "menu-ico" "> <i class="fas fa-bars 7x"></i></span>
 		</header>
 		<main id = "main-body">
 			<section id = "home-section" class = "">
@@ -254,11 +256,11 @@
 						<div id = "contact-social">
 							<h4>I AM SOCIAL</h4>
 							<ul >
-								<li><a href = "#" target = "_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-								<li><a href = "#" target = "_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-								<li><a href = "#" target = "_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-								<li><a href = "#" target = "_blank"><i class="fab fa-codepen"></i> Codepen</a></li>
-								<li><a href = "#" target = "_blank"><i class="fab fa-github"></i> Github</a></li>
+								<li><a href = "https://www.facebook.com/golamkibriajahid" target = "_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+								<li><a href = "https://www.twitter.com/gk_jahid" target = "_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+								<li><a href = "https://www.linkedin.com/in/gkjahid/" target = "_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+								<li><a href = "https://www.codepen.io/gkjahid" target = "_blank"><i class="fab fa-codepen"></i> Codepen</a></li>
+								<li><a href = "https://www.github.com/gk-jahid" target = "_blank"><i class="fab fa-github"></i> Github</a></li>
 							</ul>
 						</div>
 					</div>
@@ -340,7 +342,14 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+			;
+			function topMenu(){
+			document.getElementsById("nav-bar").style.display = "block";
+			}
+			
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
