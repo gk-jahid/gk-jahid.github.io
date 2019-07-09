@@ -39,6 +39,10 @@ html {
 	width:90%;
 	margin:auto;
 }
+.title{
+	left:5%;
+	position:relative;
+}
 .nav-link{
 	text-decoration:none;
 	padding:10px;
